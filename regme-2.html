@@ -80,7 +80,7 @@ body {
         <li><a href="contact.html">Contacts</a></li>
         <li><a href="regme.html">Lend</a></li>
         <li><a href="borrow.html">Borrow</a></li>
-        <li class="dropdown right pull-right margin-left-sm margin-right-lg"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login <i data-feather="chevron-down" class="margin-left-sm"></i></a>
+        <li class="dropdown login-options right pull-right margin-left-sm margin-right-lg"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login <i data-feather="chevron-down" class="margin-left-sm"></i></a>
           <ul class="dropdown-menu">
             <li><a href="login.html">Entrepreneur Login</a></li>
             <li><a href="logme.html">Investor Login</a></li>
@@ -121,23 +121,23 @@ body {
               </div>
               <div class="col-lg-4 col-md-4">
                 <div class="col-lg-12 col-md-12 col-sm-12">
-				  	<div class="form-group">
-                  <label>Profile picture</label>
-                  <div class="the-prof"> <img src="images/avarter.jpg" id="prof-picture"> </div>
-                  <label for="prof-pic">
-                  <!--	  mpesa payment-->
-                  <div class="button-container" >
-                    <div class="button-pay" title="upload a profile picture">
-                      <p class="btnText mb-0 h-100">Profile picture</p>
-                      <div class="btnTwo">
-                        <p class="btnText2"><i data-feather="camera"></i></p>
+                  <div class="form-group">
+                    <label>Profile picture</label>
+                    <div class="the-prof"> <img src="images/avarter.jpg" id="prof-picture"> </div>
+                    <label for="prof-pic">
+                    <!--	  mpesa payment-->
+                    <div class="button-container" >
+                      <div class="button-pay" title="upload a profile picture">
+                        <p class="btnText mb-0 h-100">Profile picture</p>
+                        <div class="btnTwo">
+                          <p class="btnText2"><i data-feather="camera"></i></p>
+                        </div>
                       </div>
                     </div>
+                    </label>
+                    <input type="file" class="form-control d-none" id="prof-pic" onChange="showimage.call(this)" accept="image/gif, image/jpeg, image/png">
                   </div>
-                  </label>
-                  <input type="file" class="form-control d-none" id="prof-pic" onChange="showimage.call(this)" accept="image/gif, image/jpeg, image/png">
                 </div>
-				  </div>
               </div>
               
               <!--								personal details-->
@@ -186,10 +186,10 @@ body {
               </div>
             </div>
             <div class="col-lg-12">
-             	<div class="col-lg-12">
-					 <h4>Account Details</h4>
-					<hr>
-				</div>
+              <div class="col-lg-12">
+                <h4>Account Details</h4>
+                <hr>
+              </div>
               <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="form-group">
                   <label>Desired username</label>
@@ -209,7 +209,14 @@ body {
                   <p class="text-danger"><code>Make sure the passwords match</code></p>
                 </div>
               </div>
-              <div class="col-lg-12 margin-bottom-sm">
+              <div class="col-lg-12 col-sm-12 col-md-12">
+                <p>
+                  <label>
+                    <input type="checkbox" class="filled-in"/>
+                    <span>I have read and understood the terms and conditions</span> </label>
+                </p>
+              </div>
+              <div class="col-lg-12 col-sm-12 col-md-12 margin-bottom-md">
                 <button class="form-button">Continue</button>
               </div>
             </div>
